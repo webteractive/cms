@@ -1,6 +1,7 @@
 {
   "recommendations": [
     "open-southeners.laravel-pint",
-    "shufo.vscode-blade-formatter"
+    "shufo.vscode-blade-formatter",
+    "codingyu.laravel-goto-view"
   ]
 }
