@@ -1,0 +1,12 @@
+{
+    "editor.formatOnSave": true,
+    "emmet.triggerExpansionOnTab": true,
+    "blade.format.enable": true,
+    "[php]": {
+        "editor.defaultFormatter": "open-southeners.laravel-pint",
+    },
+    "[blade]": {
+        "editor.defaultFormatter": "shufo.vscode-blade-formatter",
+        "editor.autoClosingBrackets": "always"
+    }
+}
