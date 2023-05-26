@@ -12,11 +12,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('post__likes', function (Blueprint $table) {
+        Schema::create('post_likes', function (Blueprint $table) {
             $table->foreignIdFor(Post::class);
             $table->string('ip_address')->nullable();
-            $table->timestamp('liked_at')->useCurrent()->nullable();
+            $table->timestamp('liked_at')->nullable();
             $table->string('user_agent')->nullable();
+
         });
     }
 
@@ -25,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('post__likes');
+        Schema::dropIfExists('post_likes');
     }
 };

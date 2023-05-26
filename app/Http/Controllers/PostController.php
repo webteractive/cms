@@ -13,10 +13,10 @@ class PostController extends Controller
      */
     public function index()
     {
-        $posts = Post::all();
-        $authors = User::all();
+        // $posts = Post::all();
+        // $authors = User::all();
 
-        return view('post.index', compact(['posts', 'authors']));
+        // return view('post.index', compact(['posts', 'authors']));
     }
 
     /**

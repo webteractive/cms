@@ -20,10 +20,10 @@ return new class extends Migration
             $table->string('title');
             $table->text('summary');
             $table->text('content');
-            $table->string('slug')->nullable();
+            $table->string('slug')->unique();
             $table->string('category');
-            $table->timestamp('deleted_at')->useCurrent()->nullable();
-            $table->timestamp('published_at')->useCurrent()->nullable();
+            $table->timestamp('deleted_at')->nullable();
+            $table->timestamp('published_at')->nullable();
             $table->timestamps();
         });
     }

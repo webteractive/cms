@@ -12,10 +12,10 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('post__views', function (Blueprint $table) {
+        Schema::create('post_views', function (Blueprint $table) {
             $table->foreignIdFor(Post::class);
             $table->string('ip_address')->nullable();
-            $table->timestamp('viewed_at')->useCurrent()->nullable();
+            $table->timestamp('viewed_at')->nullable();
             $table->string('user_agent')->nullable();
         });
     }
@@ -25,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('post__views');
+        Schema::dropIfExists('post_views');
     }
 };
