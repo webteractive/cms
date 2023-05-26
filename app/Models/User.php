@@ -21,6 +21,10 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'role',
+        'is_blocked',
+        'verified_at',
+        'profile_photo_path',
     ];
 
     /**
