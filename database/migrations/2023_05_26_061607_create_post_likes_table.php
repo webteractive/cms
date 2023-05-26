@@ -14,9 +14,10 @@ return new class extends Migration
     {
         Schema::create('post_likes', function (Blueprint $table) {
             $table->foreignIdFor(Post::class);
-            $table->string('ip_address')->nullable();
-            $table->timestamp('liked_at')->nullable();
-            $table->string('user_agent')->nullable();
+            $table->string('ip_address');
+            $table->timestamp('liked_at')->useCurrent();
+            $table->string('user_agent');
+            $table->primary(['post_id', 'user_agent', 'ip_address']);
 
         });
     }
