@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\content;
+use App\Http\Controllers\landingpage;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -17,6 +19,25 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/landingpage', function () {
+    return view('landingpage');
+});
+Route::get('/News', function () {
+    return view('News');
+}); 
+Route::get('/Blogs', function () {
+    return view('Blogs');
+}); 
+Route::get('/Tutorial', function () {
+    return view('Tutorial');
+});
+Route::get('/Video', function () {
+    return view('Video');
+});
+
+Route::get('/landingpage',[landingpage::class, 'index'])->name('landingpage');
+
+Route::get('/content',[content::class, 'index'])->name('content');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
