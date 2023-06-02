@@ -7,5 +7,6 @@
     <div class="relative w-10">
         <img class="rounded-full border border-gray-100 shadow-sm" src="https://randomuser.me/api/portraits/women/81.jpg"
             alt="user image" />
+
     </div>
 </div>
