@@ -1,23 +1,23 @@
 <div class="content ">
-    <p class="pr-3 item-body font-bold text-6xl mt-5 mb-5 ">
-        Lorem ipsum dolor sit amet
-    <div class="col col-span-4 ">
-        <p class=" space-x-1  text-3xl">Maecenas a eros sit amet tellus eleifend ullamcorper. Vivamus sagittis sit amet
-            nisi et sodales. Nullam imperdiet, justo non vehicula fringilla, risus mauris pharetra dolor, vitae
-            tincidunt dui mauris vel massa.</p>
-        <img class=" w-full max-h-full max-w-8xl rounded-lg  float-left  " src="img/ss.jpeg" alt="">
-        <div class="col-span-12 pl-4 float-left" src="img/ss1.jpeg">
-        </div>
-        <p class="mb-20  space-x-1  text-3xl"> Maecenas a eros sit amet tellus eleifend ullamcorper. Vivamus sagittis sit
-            amet nisi et sodales. Nullam imperdiet, justo non vehicula .</p>
-        <p class=" space-x-1  text-3xl"> Maecenas a eros sit amet tellus eleifend ullamcorper. Vivamus sagittis sit amet
-            nisi et sodales. Nullam imperdiet, justo non vehicula fringilla, risus mauris pharetra dolor, vitae
-            tincidunt dui mauris vel massa.Maecenas a eros sit amet tellus eleifend ullamcorper. Vivamus sagittis sit
-            amet nisi et sodales. Nullam imperdiet, justo non vehicula fringilla, risus mauris pharetra dolor, vitae
-            tincidunt dui mauris vel massa.Maecenas a eros sit amet tellus eleifend ullamcorper. mauris pharetra dolor,
-            vitae tincidunt dui mauris vel massa.</p>
+    <img class=" w-full max-h-full max-w-xl rounded-lg  float-left  " src="img/blog3.jpeg" alt="">
+    <div class="col-span-4 pl-4" src="img/skyline.jpeg">
+        <p class="pr-3 item-body font-bold text-4xl mb-5 ">
+            Lorem ipsum dolor sit<br> amet, consectetur<br> adipiscing elit.</p>
+    </div>
+    <div class="col col-span-5 m-4">
+        <p class=" space-x-1 text-xl pl-4 "> Maecenas a eros sit amet tellus eleifend<br>
+            ullamcorper. Vivamus sagittis sit amet nisi et<br>
+            sodales. Nullam imperdiet, justo non vehicula<br>
+            fringilla, risus mauris pharetra dolor, vitae<br>
+            tincidunt dui </p>
+    </div>
+    <div class="inline-block mt-4 pr-5 h-7  ">
+        <img class="rounded-full float-left h-full" src="https://randomuser.me/api/portraits/women/34.jpg">
+        <span class="ml-2">April 18, 2023 by Aaron Carman</span>
     </div>
 
 
-
 </div>
+<br>
+<br>
+<br>

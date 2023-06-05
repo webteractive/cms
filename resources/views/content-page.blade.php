@@ -1,4 +1,3 @@
-
 <x-app-layout>
     <div class="max-w-7xl mx-auto space-y-9 ">
         <div class=" text-right max-w-9xl mx-auto space-y-9 ">
@@ -25,46 +24,35 @@
                 </li>
             </ul>
         </div>
-        <div class=" grid grid-cols-12  ">
+        <div class=" grid grid-cols-12 gap-4 m">
             {{-- Banner --}}
-            <div class="col-span-12  ">
-                <div>
-                    <x-blogs-banner-card />
-                </div>
+            <div class="col-span-9">
+
+                <x-blogs-banner-card />
                 <x-blogs-banner-card2 />
+                <x-blogs-banner-card3 />
                 <x-blogs-banner-card3 />
                 <x-blogs-banner-card4 />
                 <x-blogs-banner-card5 />
-
             </div>
 
+            {{-- <div class=" grid-rows-4 gird col-span-3 space-y-5 ">
+                <div>
+                    <x-blogs-featured-small />
+                    <div>
+                        <x-blogs-featured1 />
+                        <div>
+                            <x-blogs-featured1 />
+                        </div>
+                    </div>
 
-
-        </div>
-        <form action="viewmoree">
-            <div class="text-center py-4">
-                <button
-                    class=" bg-gradient-to-r from-orange-500 via-red-500 to-purple-500 h-10 px-10 rounded-md items center justify-center ">
-                    View More
-                </button>
-            </div>
-        </form>
-        <hr class="w-3/4  h-1 rounded-lg bg-gradient-to-r from-orange-500 via-red- 500 to-purple-500 ">
-        <P class=" .tracking-widest uppercase text-5xl font-bold tracking-wide">s h a r e </P>
-        <hr class="w-full  h-1 rounded-lg bg-gradient-to-r from-orange-500 via-red- 500 to-purple-500 ">
-
-        <p class=" text-4xl font-extrabold font-Josefin Sans tracking-wide">More from Webteractive</p>
-
-        <div class="grid gap-4 grid-cols-4">
-            <x-buttom-banner />
-            <x-buttom-banner2 />
-            <x-buttom-banner3 />
-            <x-buttom-banner4 />
-            <br>
+                </div>
+            </div> --}}
+            <hr class="w-full h-1 rounded-lg bg-gradient-to-r from-orange-500 via-red- 500 to-purple-500 ">
+            dfhfghfgh
         </div>
 
     </div>
     @include('layouts.footer')
 
 </x-app-layout>
-
