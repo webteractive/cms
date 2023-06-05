@@ -1,3 +1,4 @@
+
 <x-app-layout>
     <div class="max-w-7xl mx-auto space-y-9 ">
         <div class=" text-right max-w-9xl mx-auto space-y-9 ">
@@ -55,3 +56,4 @@
     @include('layouts.footer')
 
 </x-app-layout>
+
