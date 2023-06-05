@@ -35,6 +35,17 @@ Route::get('/Video', function () {
     return view('Video');
 });
 
+Route::get('/tileview', function () {
+    return view('tileview');
+});
+Route::get('/Viewmoree', function () {
+    return view('Viewmoree');
+});
+
+
+
+
+
 Route::get('/landingpage',[landingpage::class, 'index'])->name('landingpage');
 
 Route::get('/content',[content::class, 'index'])->name('content');

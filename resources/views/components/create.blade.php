@@ -36,6 +36,39 @@
 
 
 
+
+<div class="grid grid-cols-12 ">
+
+    <div class="col-span-3 bg-gray-800 py-12 ">
+        <img src="img/web.jpeg" class="  ml-7 h-40 w-63 object-center px-9 py-5" />
+
+        <div class=" hover:bg-white text-center text-3xl bg-slate-500 uppercase h-4 bg-auto bg-no-repeat bg-left py-10">
+            <a href="{{ route('dashboard') }}">Dashboard</a>
+        </div>
+        <br>
+        <div
+            class=" hover:bg-white  text-center text-3xl bg-slate-500 uppercase rounded-lg h-4 bg-auto bg-no-repeat bg-left py-10  ">
+            <a href="{{ route('dashboard') }}">My Content</a>
+        </div><br>
+        <div
+            class=" hover:bg-white text-center text-3xl bg-slate-500 uppercase rounded-lg h-4 bg-auto bg-no-repeat bg-left py-10  ">
+            <a href="{{ route('content') }}">Publish Content</a>
+        </div><br>
+        <div
+            class=" hover:bg-white text-center text-3xl bg-slate-500 uppercase rounded-lg h-4 bg-auto bg-no-repeat bg-left py-10  ">
+            <a href="">Log-Out</a>
+        </div>
+
+    </div>
+    <div class="col-span-9 ">
+        <nav class="flex justify-between py-5 items-center bg-gray-200">
+            <p class="ml-6 font-bold uppercase text-3xl">publish content</p>
+            <div class=" mt-4 h-12  pr-32">
+                <img class="rounded-full float-left h-full" src="https://randomuser.me/api/portraits/women/34.jpg">
+                {{ Auth::user()->name }}
+            </div>
+        </nav>
+=======
 <div class="grid grid-cols-12 gap-2">
 
     <div class="col-span-3 bg-gray-800 py-12">
@@ -55,7 +88,103 @@
 
 
 
+
         <!-- Dropdown menu -->
+
+        <br>
+        <div class="gap-4">
+
+            <label class="font-semibold" for="category"></label>
+            <select class="font-semibold" name="category_name">
+
+                <option value="news" class=" bg-gradient-to-r from-orange-500 via-red-500 to-purple-500">
+                    <li>News</li>
+                </option>
+                <option value="videos">
+                    <li>Videos</li>
+                </option>
+                <option value="Podcasts">
+                    <li>Podcasts</li>
+                </option>
+                <option value="Blogs">
+                    <li>Blogs</li>
+                </option>
+                <option value="Tutorials">
+                    <li>Tutorials</li>
+                </option>
+            </select>
+        </div>
+        <!-- Dropdown menu -->
+
+        <div class="col-span-9 px-72 ">
+
+            <div class="mt-4">
+                <x-input-label for="title" :value="__('Title')" />
+                <x-text-input id="title" class="block mt-1 w-half" type="text" name="title" />
+                <x-input-error :messages="$errors->get('title')" class="mt-2" />
+            </div></br>
+
+
+            <br> <label for="">Slug:</label><br>
+            <textarea name="summary" id="" cols="70" rows="3" class=" static form-control"></textarea>
+
+            @error('summary')
+                <div style="color:red;">{{ $message }}</div>
+            @enderror
+
+            <br> <label for="">Summary:</label><br><br>
+            <textarea name="summary" id="" cols="70" rows="3" class=" static form-control"></textarea>
+
+            @error('summary')
+                <div style="color:red;">{{ $message }}</div>
+            @enderror
+
+            <br>
+            <br> <label for="">Content:</label><br>
+            <textarea id="editor2" name="editor2" rows="1"></textarea>
+            <script>
+                CKEDITOR.replace('editor2', {
+                    height: 150,
+                    /* Default CKEditor 4 styles are included as well to avoid copying default styles. */
+                    contentsCss: [
+                        'http://cdn.ckeditor.com/4.21.0/full-all/contents.css',
+                        'https://ckeditor.com/docs/ckeditor4/4.21.0/examples/assets/css/classic.css'
+                    ],
+                });
+            </script>
+            </body>
+            <!--Add More Content-->
+            <!--Tags-->
+            <div class="flex items-start justify-self-start mt-10">
+                <div class="w-1/2 pr-4">
+                    <label for="Tags" class="block mb-2 text-m text-gray-700">Tags:</label>
+                    <input type="text" class="w-full px-4 py-6 text- border border-gray-300 rounded outline-none"
+                        name="tags" value=" " autofocus />
+                </div>
+            </div>
+            <script>
+                // The DOM element you wish to replace with Tagify
+                var input = document.querySelector('input[name=tags]');
+                // initialize Tagify on the above input node reference
+                new Tagify(input);
+            </script>
+            </body>
+            <br> <br>
+            <div class="ml-40">
+                <x-primary-button class="ml-2 bg-gradient-to-r from-orange-500 via-red-500 to-purple-500"
+                    type="submit">
+                    <br>
+                    Save as Draft
+                </x-primary-button>
+                <x-primary-button class="ml-3 bg-gradient-to-r from-orange-500 via-red-500 to-purple-500"
+                    type="submit">
+                    Publish Content
+                </x-primary-button>
+            </div>
+        </div>
+    </div>
+</div>
+
         <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown"
             class="justify-items-end text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
             type="button">Category<svg class="w-4 h-4 ml-2" aria-hidden="true" fill="none" stroke="currentColor"
@@ -80,6 +209,9 @@
                         class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Tutorial</a>
                 </li>
                 <li>
+
+                    <a href="Video"
+=======
 
                     <a href="#"
 
@@ -167,6 +299,7 @@
     </div>
 </div>
 </div>
+
 
 
 
