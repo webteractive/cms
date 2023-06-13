@@ -1,8 +1,9 @@
-<div class="content ">
-    <p class="pr-3 item-body font-bold text-6xl mt-5 mb-5 ">
+<div class="content mt-36 ">
+    <p class="pr-3 item-body font-bold text-6xl ">
         Lorem ipsum dolor sit amet
     <div class="col col-span-4 ">
-        <p class=" space-x-1  text-3xl"> Maecenas a eros sit amet tellus eleifend ullamcorper. Vivamus sagittis sit
+        <p class=" mt-5  space-x-1  text-3xl"> Maecenas a eros sit amet tellus eleifend
+            ullamcorper. Vivamus sagittis sit
             amet nisi et sodales. Nullam imperdiet, justo non vehicula fringilla, risus mauris pharetra dolor, vitae
             tincidunt dui mauris vel massa.Maecenas a eros sit amet tellus eleifend ullamcorper. Vivamus sagittis sit
             amet nisi et sodales. Nullam imperdiet, justo non vehicula fringilla, risus mauris pharetra dolor, vitae

@@ -22,6 +22,7 @@ return new class extends Migration
             $table->text('content');
             $table->string('slug')->unique();
             $table->string('category');
+            $table->string('tags');
             $table->timestamp('deleted_at')->nullable();
             $table->timestamp('published_at')->nullable();
             $table->timestamps();

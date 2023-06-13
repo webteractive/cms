@@ -71,7 +71,7 @@
             </div>
             <form action="Viewmoree">
                 <div class="text-center py-4">
-                    <button
+                    <button a href="Viewmoree" id="loadMoreclass="
                         class=" bg-gradient-to-r from-orange-500 via-red-500 to-purple-500 h-10 px-10 rounded-md items center justify-center">
                         View More
                     </button>

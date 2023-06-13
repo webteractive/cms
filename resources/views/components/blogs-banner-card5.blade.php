@@ -1,5 +1,5 @@
 <div class="content ">
-    <img class=" w-full max-h-full max-w-xl rounded-lg  float-left  " src="img/blog2.jpeg" alt="">
+    <img class=" w-full max-h-full max-w-xl rounded-lg  float-left  " src="img/blog5.jpeg" alt="">
     <div class="col-span-4 pl-4" src="img/skyline.jpeg">
         <p class="pr-3 item-body font-bold text-4xl mb-5 ">
             Lorem ipsum dolor sit<br> amet, consectetur<br> adipiscing elit.</p>
@@ -19,5 +19,4 @@
 
 </div>
 <br>
-<br>
-<br>
+<br><br>

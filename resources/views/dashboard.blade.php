@@ -14,7 +14,7 @@
 
     </div>
     </div>
-    <form action="newspage">
+    <form action="viewmoree">
         <div class="text-center py-4">
             <button
                 class=" bg-gradient-to-r from-orange-500 via-red-500 to-purple-500 h-10 px-10 rounded-md items center justify-center ">

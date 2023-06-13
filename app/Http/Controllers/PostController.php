@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\StorePostRequest;
+use Illuminate\Http\Request;
 use App\Models\Post;
 use App\Models\User;
-use Illuminate\Http\Request;
+use Carbon\Carbon;
 
 class PostController extends Controller
 {
@@ -24,15 +26,25 @@ class PostController extends Controller
      */
     public function create()
     {
-        //
+        return view('post.create');
     }
+    
 
     /**
      * Store a newly created resource in storage.
      */
     public function store(Request $request)
     {
-        //
+        switch ($request->get('submitbutton')) {
+            case 'publish':$publish = Carbon::now();$post = Post::create(['user_id' => $request->user()->id,'title' => $request->title,'slug' => $request->slug,'summary' => $request->summary,'content' => $request ->content,'category' => $request ->category,'published_at' => $publish,
+                ]);
+                break;
+                case 'draft':$post = Post::create(['user_id' => $request->user()->id,'title' => $request->title,'slug' => $request->slug,'summary' => $request->summary,'content' => $request ->content,'category' => $request ->category,
+                    ]);
+                    break;}
+  
+  
+          return redirect (route('post.index'));
     }
 
     /**
@@ -46,9 +58,9 @@ class PostController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
-    {
-        //
+    public function edit(Post $post)
+    { $author = User::find($post->user_id);
+        return view('post.edit', compact(['post','author']));
     }
 
     /**
